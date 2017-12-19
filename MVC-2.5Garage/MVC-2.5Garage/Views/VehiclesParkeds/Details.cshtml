@@ -1,0 +1,82 @@
+﻿@model MVC_2._5Garage.Models.VehiclesParked
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VehiclesParked</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.MemberName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle.VehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle.VehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfWheels)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfWheels)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckInTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckInTime)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.CheckOutTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckOutTime)
+        </dd>*@
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,89 @@
+﻿@model MVC_2._5Garage.Models.VehiclesParked
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VehiclesParked</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.MemberName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicle.VehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicle.VehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoOfWheels)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoOfWheels)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckInTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckInTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CheckOutTime)
+        </dt>
+
+        <dd>
+            @Html.TextBoxFor(model => model.CheckOutTime, new { @Value = @DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), @class = "form-control", @readonly = "readonly" })
+        </dd>
+
+   
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Park Out" class="btn btn-success" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

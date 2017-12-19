@@ -1,0 +1,87 @@
+﻿@model IEnumerable<MVC_2._5Garage.Models.VehiclesParked>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Parked Vehicles</h2>
+
+<p>
+    @Html.ActionLink("Park", "Create")
+@using (Html.BeginForm())
+{
+    <div class="form-inline">
+
+        Registration Number : @Html.TextBox("searchstring", null, new { @class = "form-control" })
+
+    @*Type : @Html.DropDownList("VehicleType", "All");*@
+
+       Type : @Html.TextBox("SearchModel", null, new { @class = "form-control" })
+
+       
+            <input type="submit" value="Search" class="btn btn-info" /></div>}
+    </p>
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Member.MemberName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Vehicle.VehicleType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoOfWheels)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckInTime)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.CheckOutTime)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Member.MemberName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vehicle.VehicleType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoOfWheels)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckInTime)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CheckOutTime)
+        </td>*@
+        <td class="text-center">
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) ||
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) ||
+            @Html.ActionLink("Un Park", "Delete", new { id=item.ID }) ||
+        </td>
+    </tr>
+}
+
+</table>
