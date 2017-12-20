@@ -27,6 +27,33 @@ namespace MVC_2._5Garage.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            //For parked vehicles
+
+            context.VehiclesParked.AddOrUpdate(n => n.RegNo, new Models.VehiclesParked()
+            {
+                RegNo = "xyz123",
+                Model = "Tesla",
+                Brand = "Puma",
+                NoOfWheels = 4,
+            });
+
+            // for members
+
+            context.Members.AddOrUpdate(m => m.Id, new Models.Members()
+            {
+                MemberName = "Rahul",
+                MemberEmail = "abc@red.com",
+                MemberPhone = "123456789",
+
+            });
+
+            //for vehicles
+
+            context.VehiclesType.AddOrUpdate(v => v.Id, new Models.VehicleTypes()
+            {
+                VehicleType = "Car",
+            });
         }
     }
 }

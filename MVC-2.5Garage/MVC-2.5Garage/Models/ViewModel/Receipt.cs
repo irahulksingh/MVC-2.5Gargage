@@ -12,6 +12,9 @@ namespace MVC_2._5Garage.Models.ViewModel
     {
         public int ID { get; set; }
 
+        [DisplayName("Owner Name:")]
+        public string MemberName { get; set; }
+
         [DisplayName("Parked in at:")]
         public DateTime CheckIn { get; set; }
 
@@ -40,6 +43,7 @@ namespace MVC_2._5Garage.Models.ViewModel
         public Receipt(VehiclesParked VehicleRec)
         {
             ID = VehicleRec.ID;
+            MemberName = VehicleRec.Member.MemberName;
             CheckIn = VehicleRec.CheckInTime;
             Checkout = DateTime.Now;
            VehicleType = VehicleRec.VehicleId.ToString();

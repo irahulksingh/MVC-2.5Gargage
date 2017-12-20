@@ -179,6 +179,18 @@
     <Compile Include="Migrations\201712200941059_init13.Designer.cs">
       <DependentUpon>201712200941059_init13.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712200947384_init14.cs" />
+    <Compile Include="Migrations\201712200947384_init14.Designer.cs">
+      <DependentUpon>201712200947384_init14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712200950088_init15.cs" />
+    <Compile Include="Migrations\201712200950088_init15.Designer.cs">
+      <DependentUpon>201712200950088_init15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712201004159_init16.cs" />
+    <Compile Include="Migrations\201712201004159_init16.Designer.cs">
+      <DependentUpon>201712201004159_init16.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
     <Compile Include="Models\VehiclesParked.cs" />
@@ -277,6 +289,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712200941059_init13.resx">
       <DependentUpon>201712200941059_init13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712200947384_init14.resx">
+      <DependentUpon>201712200947384_init14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712200950088_init15.resx">
+      <DependentUpon>201712200950088_init15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712201004159_init16.resx">
+      <DependentUpon>201712201004159_init16.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
