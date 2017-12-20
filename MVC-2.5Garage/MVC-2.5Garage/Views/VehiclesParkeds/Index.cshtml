@@ -16,7 +16,10 @@
 
     @*Type : @Html.DropDownList("VehicleType", "All");*@
 
-       Type : @Html.TextBox("SearchModel", null, new { @class = "form-control" })
+              Vehicle Type : @Html.DropDownList("SearchType",null,"All", htmlAttributes: new { @class = "form-control" })
+                @*@Html.DropDownList("VehicleId", null, "Select Type", htmlAttributes: new { @class = "form-control" })*@
+       
+       @*Type : @Html.TextBox("SearchModel", null, new { @class = "form-control" })*@
 
        
             <input type="submit" value="Search" class="btn btn-info" /></div>}

@@ -23,19 +23,43 @@ namespace MVC_2._5Garage.Controllers
         // GET: VehiclesParkeds
                      public ActionResult Index(string SearchString, string SearchType)
         {
+            var VehList = new List<string>();
 
-            ViewBag.VehicleId = new SelectList(db.VehiclesType, "Id", "VehicleType");
-            var Vehicles = from v in db.VehiclesParked
-                           select v;
+            var VehQuery = from d in db.VehiclesParked select d.Vehicle.VehicleType;
+
+            VehList.AddRange(VehQuery.Distinct());
+            ViewBag.SearchType = new SelectList(VehList);
+
+            var Vehicles = from v in db.VehiclesParked select v;
+
             if (!string.IsNullOrWhiteSpace(SearchString))
             {
                 Vehicles = Vehicles.Where(s => s.RegNo.Contains(SearchString));
             }
             if (!string.IsNullOrWhiteSpace(SearchType))
             {
-                Vehicles = Vehicles.Where(s => s.VehicleId.ToString().Contains(SearchType));
+                //return View();
+                Vehicles = Vehicles.Where(s => s.Vehicle.VehicleType == SearchType);
             }
+
             return View(Vehicles);
+
+
+            ////ViewBag.VehicleId = new SelectList(db.VehiclesType, "Id", "VehicleType");
+
+
+            ////var Vehicles = from v in db.VehiclesParked
+            ////               select v;
+            ////if (!string.IsNullOrWhiteSpace(SearchString))
+            ////{
+            ////    Vehicles = Vehicles.Where(s => s.RegNo.Contains(SearchString));
+            ////}
+            ////if (!string.IsNullOrWhiteSpace(SearchType))
+            ////{
+            ////    //return View();
+            ////    Vehicles = Vehicles.Where(s => s.VehicleId.ToString().Contains(SearchType));
+            ////}
+            ////return View(Vehicles);
             // orginal code remove top and the string declaration to revert
             //var vehiclesParked = db.VehiclesParked.Include(v => v.Member).Include(v => v.Vehicle);
             //return View(vehiclesParked.ToList());
