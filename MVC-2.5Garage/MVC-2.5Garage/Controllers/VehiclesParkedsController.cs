@@ -10,7 +10,7 @@ using MVC_2._5Garage.DataLayer;
 using MVC_2._5Garage.Models;
 //using MVC_2._5Garage.Models;
 using MVC_2._5Garage.Models.ViewModel;
-
+using PagedList;
 
 namespace MVC_2._5Garage.Controllers
 {
@@ -21,8 +21,23 @@ namespace MVC_2._5Garage.Controllers
 
 
         // GET: VehiclesParkeds
-                     public ActionResult Index(string SearchString, string SearchType)
+        public ActionResult Index(string sortOrder,string currentFilter,string SearchString, string SearchType,int ? page)
         {
+
+            ViewBag.Currentsort = sortOrder;
+            if (SearchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                SearchString = currentFilter;
+            }
+
+            ViewBag.CurrentFilter = SearchString;
+
+           
+
             var VehList = new List<string>();
 
             var VehQuery = from d in db.VehiclesParked select d.Vehicle.VehicleType;
@@ -42,7 +57,10 @@ namespace MVC_2._5Garage.Controllers
                 Vehicles = Vehicles.Where(s => s.Vehicle.VehicleType == SearchType);
             }
 
-            return View(Vehicles);
+            int pageSize = 50;
+            int pageNumber = (page ?? 1);
+            return View(Vehicles.OrderBy(i=>i.RegNo).ToPagedList(pageNumber, pageSize));
+            //return View(Vehicles);
 
 
             ////ViewBag.VehicleId = new SelectList(db.VehiclesType, "Id", "VehicleType");
