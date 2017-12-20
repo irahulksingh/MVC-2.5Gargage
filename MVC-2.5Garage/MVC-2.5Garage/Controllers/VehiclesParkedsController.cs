@@ -141,10 +141,12 @@ namespace MVC_2._5Garage.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             VehiclesParked vehiclesParked = db.VehiclesParked.Find(id);
-            //var TotalTimeandPrice = new Receipt(vehiclesParked)
+            var TotalTimeandPrice = new Receipt(vehiclesParked);
             db.VehiclesParked.Remove(vehiclesParked);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return View("DeleteConfirmed", TotalTimeandPrice);
+        
+            //return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

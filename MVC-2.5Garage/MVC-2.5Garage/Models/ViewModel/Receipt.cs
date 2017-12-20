@@ -19,7 +19,7 @@ namespace MVC_2._5Garage.Models.ViewModel
         public DateTime Checkout { get; set; }
 
         [DisplayName("Vehicle type:")]
-        public string Type { get; set; }
+        public string VehicleType { get; set; }
 
         [DisplayName("Registration No.:")]
         public string RegNo { get; set; }
@@ -42,7 +42,7 @@ namespace MVC_2._5Garage.Models.ViewModel
             ID = VehicleRec.ID;
             CheckIn = VehicleRec.CheckInTime;
             Checkout = DateTime.Now;
-            Type = VehicleRec.VehicleId.ToString();
+           VehicleType = VehicleRec.VehicleId.ToString();
             RegNo = VehicleRec.RegNo;
             TotalTime = DateTime.Now - VehicleRec.CheckInTime;
             double TTforPricing = TotalTime.Hours;

@@ -167,6 +167,18 @@
     <Compile Include="Migrations\201712191530093_init9.Designer.cs">
       <DependentUpon>201712191530093_init9.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712200907476_init11.cs" />
+    <Compile Include="Migrations\201712200907476_init11.Designer.cs">
+      <DependentUpon>201712200907476_init11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712200923569_init12.cs" />
+    <Compile Include="Migrations\201712200923569_init12.Designer.cs">
+      <DependentUpon>201712200923569_init12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712200941059_init13.cs" />
+    <Compile Include="Migrations\201712200941059_init13.Designer.cs">
+      <DependentUpon>201712200941059_init13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
     <Compile Include="Models\VehiclesParked.cs" />
@@ -214,12 +226,12 @@
     <Content Include="Views\Members\Details.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
     <Content Include="Views\Members\Index.cshtml" />
+    <Content Include="Views\VehiclesParkeds\Index.cshtml" />
     <Content Include="Views\VehiclesParkeds\Create.cshtml" />
     <Content Include="Views\VehiclesParkeds\Delete.cshtml" />
+    <Content Include="Views\VehiclesParkeds\DeleteConfirmed.cshtml" />
     <Content Include="Views\VehiclesParkeds\Details.cshtml" />
     <Content Include="Views\VehiclesParkeds\Edit.cshtml" />
-    <Content Include="Views\VehiclesParkeds\Index.cshtml" />
-    <Content Include="Views\VehiclesParkeds\DeleteConfirmed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -256,6 +268,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712191530093_init9.resx">
       <DependentUpon>201712191530093_init9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712200907476_init11.resx">
+      <DependentUpon>201712200907476_init11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712200923569_init12.resx">
+      <DependentUpon>201712200923569_init12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712200941059_init13.resx">
+      <DependentUpon>201712200941059_init13.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

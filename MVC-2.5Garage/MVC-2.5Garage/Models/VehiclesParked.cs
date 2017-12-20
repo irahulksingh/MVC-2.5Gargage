@@ -59,7 +59,36 @@ namespace MVC_2._5Garage.Models
         [DisplayName("Total time in garage:")]
         public TimeSpan TotalTime { get; set; }
 
+        [DisplayName("Amount payable:")]
+        public int Price { get; set; }
+
+        public VehiclesParked()
+        {
+
+        }
+
+        public VehiclesParked(VehiclesParked VehicleRec)
+        {
+            //ID = VehicleRec.ID;
+            //CheckInTime = VehicleRec.CheckInTime;
+            //CheckOutTime = DateTime.Now;
+            //VehiclesParked = VehicleRec.VehicleId.ToString();
+            //RegNo = VehicleRec.RegNo;
+            TotalTime = DateTime.Now - VehicleRec.CheckInTime;
+            double TTforPricing = TotalTime.Hours;
+            if (TTforPricing <= 1)
+            {
+                Price = 40;
+
+            }
+            else
+            {
+                Price = 20 * Convert.ToInt32(TTforPricing) + 20;
 
 
+            }
+
+
+        }
     }
 }

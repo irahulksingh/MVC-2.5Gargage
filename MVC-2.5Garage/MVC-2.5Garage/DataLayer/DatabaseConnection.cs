@@ -14,5 +14,7 @@ namespace MVC_2._5Garage.DataLayer
         public System.Data.Entity.DbSet<MVC_2._5Garage.Models.Members> Members { get; set; }
         public System.Data.Entity.DbSet<MVC_2._5Garage.Models.VehiclesParked> VehiclesParked { get; set; }
         public System.Data.Entity.DbSet<MVC_2._5Garage.Models.VehicleTypes> VehiclesType { get; set; }
+
+        public System.Data.Entity.DbSet<MVC_2._5Garage.Models.ViewModel.Receipt> Receipts { get; set; }
     }
 }
