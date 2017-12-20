@@ -135,50 +135,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712191124516_init1.cs" />
-    <Compile Include="Migrations\201712191124516_init1.Designer.cs">
-      <DependentUpon>201712191124516_init1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191126283_init2.cs" />
-    <Compile Include="Migrations\201712191126283_init2.Designer.cs">
-      <DependentUpon>201712191126283_init2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191138103_init3.cs" />
-    <Compile Include="Migrations\201712191138103_init3.Designer.cs">
-      <DependentUpon>201712191138103_init3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191151298_init5.cs" />
-    <Compile Include="Migrations\201712191151298_init5.Designer.cs">
-      <DependentUpon>201712191151298_init5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191308196_init6.cs" />
-    <Compile Include="Migrations\201712191308196_init6.Designer.cs">
-      <DependentUpon>201712191308196_init6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191324069_init7.cs" />
-    <Compile Include="Migrations\201712191324069_init7.Designer.cs">
-      <DependentUpon>201712191324069_init7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191329122_init8.cs" />
-    <Compile Include="Migrations\201712191329122_init8.Designer.cs">
-      <DependentUpon>201712191329122_init8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712191530093_init9.cs" />
-    <Compile Include="Migrations\201712191530093_init9.Designer.cs">
-      <DependentUpon>201712191530093_init9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712200907476_init11.cs" />
-    <Compile Include="Migrations\201712200907476_init11.Designer.cs">
-      <DependentUpon>201712200907476_init11.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712200923569_init12.cs" />
-    <Compile Include="Migrations\201712200923569_init12.Designer.cs">
-      <DependentUpon>201712200923569_init12.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712200941059_init13.cs" />
-    <Compile Include="Migrations\201712200941059_init13.Designer.cs">
-      <DependentUpon>201712200941059_init13.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
     <Compile Include="Models\VehiclesParked.cs" />
@@ -243,41 +199,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712191124516_init1.resx">
-      <DependentUpon>201712191124516_init1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191126283_init2.resx">
-      <DependentUpon>201712191126283_init2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191138103_init3.resx">
-      <DependentUpon>201712191138103_init3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191151298_init5.resx">
-      <DependentUpon>201712191151298_init5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191308196_init6.resx">
-      <DependentUpon>201712191308196_init6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191324069_init7.resx">
-      <DependentUpon>201712191324069_init7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191329122_init8.resx">
-      <DependentUpon>201712191329122_init8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712191530093_init9.resx">
-      <DependentUpon>201712191530093_init9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712200907476_init11.resx">
-      <DependentUpon>201712200907476_init11.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712200923569_init12.resx">
-      <DependentUpon>201712200923569_init12.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712200941059_init13.resx">
-      <DependentUpon>201712200941059_init13.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

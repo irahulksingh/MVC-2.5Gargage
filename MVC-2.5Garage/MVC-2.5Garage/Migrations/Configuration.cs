@@ -1,4 +1,4 @@
-namespace MVC_2._5Garage.Migrations
+-------namespace MVC_2._5Garage.Migrations
 {
     using System;
     using System.Data.Entity;
