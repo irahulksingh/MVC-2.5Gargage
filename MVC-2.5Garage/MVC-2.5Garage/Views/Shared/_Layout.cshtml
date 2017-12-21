@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Raleway" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - iGarage 2.5</title>
     @Styles.Render("~/Content/css")
@@ -20,18 +21,19 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Register", "Index", "Members")</li>
+                    <li>@Html.ActionLink("Members", "Index", "Members")</li>
                     <li>@Html.ActionLink("Parked Vehicles", "Index", "VehiclesParkeds")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="parallax"></div>
+    <div class="col-lg-12">
         @RenderBody()
         <hr />
         <footer>
-            <p class=" text-center">&copy; @DateTime.Now.Year - iGarage Team</p>
+            <p class="text-center">&copy; @DateTime.Now.Year - iGarage Team</p>
         </footer>
     </div>
 

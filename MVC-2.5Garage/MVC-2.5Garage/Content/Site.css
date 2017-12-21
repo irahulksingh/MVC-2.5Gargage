@@ -1,13 +1,21 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image:url("")
+    font-family:Raleway;
+    /*background-image: url("../Images/Main.jpg")*/
+    /*background-image:url("")*/
 }
 
 .img-rounded{
     border-radius:5%;
 }
 
+h1{
+    font-family:Poppins;
+}
+h2{
+    font-family:Poppins;
+}
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 0px;
@@ -30,7 +38,7 @@ textarea {
 
 .parallax {
     /* The image used */
-    background-image: url("../Images/Main.jpg");
+    background-image: url("../Images/Red.jpeg");
     /* Set a specific height */
     height: 500px;
     margin:0;
@@ -40,4 +48,14 @@ textarea {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }

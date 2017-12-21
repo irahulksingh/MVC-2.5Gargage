@@ -54,6 +54,8 @@ namespace MVC_2._5Garage.Migrations
             {
                 VehicleType = "Car",
             });
+
+          
         }
     }
 }

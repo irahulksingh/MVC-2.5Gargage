@@ -12,7 +12,7 @@ namespace MVC_2._5Garage.Models
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(10, ErrorMessage = "Name field can have maximum 15 characters.")]
+        [MaxLength(35, ErrorMessage = "Name field can have maximum 35 characters.")]
         [DisplayName("Member Name : ")]
         public string MemberName { get; set; }
 

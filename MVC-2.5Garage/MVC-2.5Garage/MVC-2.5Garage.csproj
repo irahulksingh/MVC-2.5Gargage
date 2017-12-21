@@ -142,9 +142,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712201911195_init1.cs" />
-    <Compile Include="Migrations\201712201911195_init1.Designer.cs">
-      <DependentUpon>201712201911195_init1.cs</DependentUpon>
+    <Compile Include="Migrations\201712211050515_init1.cs" />
+    <Compile Include="Migrations\201712211050515_init1.Designer.cs">
+      <DependentUpon>201712211050515_init1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
@@ -161,9 +161,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Add.jpg" />
+    <Content Include="Images\AddVehicle.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\Logo.png" />
+    <Content Include="Images\Main.jpeg" />
     <Content Include="Images\Main.jpg" />
+    <Content Include="Images\Main1.jpg" />
+    <Content Include="Images\Main12.jpg" />
+    <Content Include="Images\Main2.jpg" />
+    <Content Include="Images\Main5.jpg" />
+    <Content Include="Images\Main7.jpg" />
+    <Content Include="Images\Red.jpeg" />
+    <Content Include="Images\Users.jpg" />
+    <Content Include="Images\Vehicles.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Images\Main.psd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -214,8 +229,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712201911195_init1.resx">
-      <DependentUpon>201712201911195_init1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712211050515_init1.resx">
+      <DependentUpon>201712211050515_init1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
