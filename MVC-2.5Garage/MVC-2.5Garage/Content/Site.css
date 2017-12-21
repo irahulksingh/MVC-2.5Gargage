@@ -40,7 +40,7 @@ textarea {
     /* The image used */
     background-image: url("../Images/Red.jpeg");
     /* Set a specific height */
-    height: 650px;
+    height: 600px;
     margin:0;
     
     /* Create the parallax scrolling effect */
