@@ -7,13 +7,13 @@
 <h2>Registered members</h2>
 
 <p>
-    @Html.ActionLink("New member", "Create")  ||
-    @Html.ActionLink("Park", "../VehiclesParkeds/Create") 
+    @Html.ActionLink("New member", "Create",null, new { @class = "btn btn-primary btn-large" })  ||
+    @Html.ActionLink("Park", "../VehiclesParkeds/Create",null, new { @class = "btn btn-primary btn-large" }) 
     @using (Html.BeginForm())
     {
         <div class="form-inline">
 
-            Member Name: @Html.TextBox("SearchByName", null, new { @class = "form-control" })
+             @Html.TextBox("SearchByName", null, new { @class = "form-control mx-sm-3", @placeholder = "Search By Member Name" })
             <input type="submit" value="Search" class="btn btn-info" />
         </div>
     }
@@ -51,9 +51,9 @@
         </td>
         <td class="text-center">
             @*@Html.ActionLink("Park", "../VehiclesParkeds/Create")*@ 
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) ||
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { id=item.Id, @class = "btn btn-primary btn-xs" }) ||
             @*@Html.ActionLink("Details", "Details", new { id=item.Id }) |*@
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { id=item.Id, @class = "btn btn-danger btn-xs" })
         </td>
     </tr>
 }

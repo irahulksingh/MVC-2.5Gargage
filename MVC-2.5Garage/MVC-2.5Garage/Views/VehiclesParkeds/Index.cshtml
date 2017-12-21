@@ -7,12 +7,13 @@
 <h2>Parked Vehicles</h2>
 
 <p>
-    @Html.ActionLink("Park", "Create")
+    @Html.ActionLink("New member", "../Members/Create", null, new { @class = "btn btn-primary btn-large" })  ||
+    @Html.ActionLink("Park", "Create",null,new { @class = "btn btn-primary" })
 @using (Html.BeginForm())
 {
     <div class="form-inline">
 
-        Registration Number : @Html.TextBox("searchstring", null, new { @class = "form-control" })
+        Registration Number : @Html.TextBox("searchstring", null, new { @class = "form-control mx-sm-3", @placeholder = "Registration number" })
 
     @*Type : @Html.DropDownList("VehicleType", "All");*@
 
@@ -80,9 +81,9 @@
             @Html.DisplayFor(modelItem => item.CheckOutTime)
         </td>*@
         <td class="text-center">
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) ||
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) ||
-            @Html.ActionLink("Un Park", "Delete", new { id=item.ID }) ||
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }, new { id=item.ID, @class = "btn btn-primary btn-xs" }) ||
+            @Html.ActionLink("Details", "Details", new { id = item.ID }, new { id=item.ID, @class = "btn btn-info btn-xs" }) ||
+            @Html.ActionLink("Un Park", "Delete", new { id = item.ID }, new { id=item.ID, @class = "btn btn-danger btn-xs" })
         </td>
     </tr>
 }

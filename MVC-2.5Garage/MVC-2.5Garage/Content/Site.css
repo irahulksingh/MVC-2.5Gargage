@@ -1,20 +1,17 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image:url("")
 }
 
-navbarC
-{
-    background-color:#0094ff;
-    color: #ffffff;
-  
-
+.img-rounded{
+    border-radius:5%;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -29,4 +26,18 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../Images/Main.jpg");
+    /* Set a specific height */
+    height: 500px;
+    margin:0;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
