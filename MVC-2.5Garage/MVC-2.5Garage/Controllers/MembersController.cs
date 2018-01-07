@@ -115,11 +115,32 @@ namespace MVC_2._5Garage.Controllers
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
+
         {
             Members members = db.Members.Find(id);
-            db.Members.Remove(members);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            //VehiclesParked vehicleType = db.VehiclesParked.Find(id);
+            //var countVeh = vehicleType.Member.Id;
+
+            if(members.VehicleType.Count != 0)
+            {
+
+                return View("~/Views/Members/Del.cshtml");
+
+            }
+            else
+            {
+                db.Members.Remove(members);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+
+            }
+            //if (countVeh = Convert.ToInt32(members))
+            //{ 
+
+            //
+            //}
+            //else
+
         }
 
         protected override void Dispose(bool disposing)

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<MVC_2._5Garage.Models.Members>
+
+@{
+    ViewBag.Title = "Deletion";
+}
+
+<h3 class="text-center text-danger">Member cannot be deleted since he/she has a vehicle parked. Please unpark the vehicle, then delete.</h3>
+
+@Html.ActionLink("Back to members", "Index")

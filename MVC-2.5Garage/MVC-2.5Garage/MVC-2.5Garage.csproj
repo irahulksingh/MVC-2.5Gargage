@@ -142,17 +142,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712211050515_init1.cs" />
-    <Compile Include="Migrations\201712211050515_init1.Designer.cs">
-      <DependentUpon>201712211050515_init1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712211133002_init2.cs" />
-    <Compile Include="Migrations\201712211133002_init2.Designer.cs">
-      <DependentUpon>201712211133002_init2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712211138514_init3.cs" />
-    <Compile Include="Migrations\201712211138514_init3.Designer.cs">
-      <DependentUpon>201712211138514_init3.cs</DependentUpon>
+    <Compile Include="Migrations\201801070029041_init1.cs" />
+    <Compile Include="Migrations\201801070029041_init1.Designer.cs">
+      <DependentUpon>201801070029041_init1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
@@ -224,6 +216,7 @@
     <Content Include="Views\VehiclesParkeds\DeleteConfirmed.cshtml" />
     <Content Include="Views\VehiclesParkeds\Details.cshtml" />
     <Content Include="Views\VehiclesParkeds\Edit.cshtml" />
+    <Content Include="Views\Members\Del.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,14 +230,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712211050515_init1.resx">
-      <DependentUpon>201712211050515_init1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712211133002_init2.resx">
-      <DependentUpon>201712211133002_init2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712211138514_init3.resx">
-      <DependentUpon>201712211138514_init3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801070029041_init1.resx">
+      <DependentUpon>201801070029041_init1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
