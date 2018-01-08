@@ -54,14 +54,26 @@ namespace MVC_2._5Garage.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,MemberName,MemberEmail,MemberPhone,Address")] Members members)
+
         {
             if (ModelState.IsValid)
             {
-                db.Members.Add(members);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                var email = members.MemberEmail;
+                var mem1 = db.Members.Where(e => e.MemberEmail == email);
+                if (mem1.Count()==0)
+                {
+                    db.Members.Add(members);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
 
+                else
+                {
+                    return View("~/Views/Members/MemExists.cshtml");
+                }
+
+               
+            }
             return View(members);
         }
 

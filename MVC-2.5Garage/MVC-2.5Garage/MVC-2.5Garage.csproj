@@ -221,6 +221,7 @@
     <Content Include="Views\VehiclesParkeds\Details.cshtml" />
     <Content Include="Views\VehiclesParkeds\Edit.cshtml" />
     <Content Include="Views\Members\Del.cshtml" />
+    <Content Include="Views\Members\MemExists.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
