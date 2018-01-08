@@ -52,7 +52,10 @@ namespace MVC_2._5Garage.Models
 
         [DisplayName("Parked out at :")]
         [Column(TypeName = "DateTime2")]
-        public DateTime CheckOutTime { get; set; }
+        public DateTime CheckOutTime => DateTime.Now;
+        //{
+        //    get { return DateTime.Now};
+        //}
 
         //[DisplayFormat(DataFormatString = "{0:hh\\:mm}", ApplyFormatInEditMode = true)]
         ////[DisplayFormat(DataFormatString = "{0:HH:mm}", ApplyFormatInEditMode = false)]

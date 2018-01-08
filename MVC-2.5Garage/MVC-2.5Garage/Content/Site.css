@@ -18,8 +18,8 @@ h2{
 }
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right:10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -38,9 +38,9 @@ textarea {
 
 .parallax {
     /* The image used */
-    background-image: url("../Images/Red.jpeg");
+    background-image: url("../Images/Red.jpg");
     /* Set a specific height */
-    height: 350px;
+    height: 300px;
     margin:0;
     
     /* Create the parallax scrolling effect */

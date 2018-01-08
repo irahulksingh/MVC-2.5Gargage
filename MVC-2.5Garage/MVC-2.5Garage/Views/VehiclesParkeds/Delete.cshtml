@@ -72,7 +72,7 @@
         </dt>
 
         <dd>
-            @Html.TextBoxFor(model => model.CheckOutTime, new { @Value = @DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), @class = "form-control", @readonly = "readonly" })
+            @Html.DisplayFor(model => model.CheckOutTime)
         </dd>
 
    

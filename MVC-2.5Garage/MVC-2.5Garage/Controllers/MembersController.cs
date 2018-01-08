@@ -80,9 +80,6 @@ namespace MVC_2._5Garage.Controllers
             return View(members);
         }
 
-        // POST: Members/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,MemberName,MemberEmail,MemberPhone,Address")] Members members)
@@ -118,10 +115,7 @@ namespace MVC_2._5Garage.Controllers
 
         {
             Members members = db.Members.Find(id);
-            //VehiclesParked vehicleType = db.VehiclesParked.Find(id);
-            //var countVeh = vehicleType.Member.Id;
-
-            if(members.VehicleType.Count != 0)
+            if (members.VehicleType.Count != 0)
             {
 
                 return View("~/Views/Members/Del.cshtml");
@@ -134,13 +128,6 @@ namespace MVC_2._5Garage.Controllers
                 return RedirectToAction("Index");
 
             }
-            //if (countVeh = Convert.ToInt32(members))
-            //{ 
-
-            //
-            //}
-            //else
-
         }
 
         protected override void Dispose(bool disposing)
