@@ -47,9 +47,11 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -142,17 +144,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712211050515_init1.cs" />
-    <Compile Include="Migrations\201712211050515_init1.Designer.cs">
-      <DependentUpon>201712211050515_init1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712211133002_init2.cs" />
-    <Compile Include="Migrations\201712211133002_init2.Designer.cs">
-      <DependentUpon>201712211133002_init2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712211138514_init3.cs" />
-    <Compile Include="Migrations\201712211138514_init3.Designer.cs">
-      <DependentUpon>201712211138514_init3.cs</DependentUpon>
+    <Compile Include="Migrations\201801161507438_init1.cs" />
+    <Compile Include="Migrations\201801161507438_init1.Designer.cs">
+      <DependentUpon>201801161507438_init1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Members.cs" />
@@ -237,14 +231,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712211050515_init1.resx">
-      <DependentUpon>201712211050515_init1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712211133002_init2.resx">
-      <DependentUpon>201712211133002_init2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712211138514_init3.resx">
-      <DependentUpon>201712211138514_init3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201801161507438_init1.resx">
+      <DependentUpon>201801161507438_init1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
