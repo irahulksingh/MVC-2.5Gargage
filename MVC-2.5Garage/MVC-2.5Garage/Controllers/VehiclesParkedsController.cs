@@ -64,8 +64,7 @@ namespace MVC_2._5Garage.Controllers
 
 
             ////ViewBag.VehicleId = new SelectList(db.VehiclesType, "Id", "VehicleType");
-
-
+            
             ////var Vehicles = from v in db.VehiclesParked
             ////               select v;
             ////if (!string.IsNullOrWhiteSpace(SearchString))
